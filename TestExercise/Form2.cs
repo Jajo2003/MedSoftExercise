@@ -79,7 +79,7 @@ namespace TestExercise
         private void selectUser(int UserId)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
-            using (SqlCommand cmd = new SqlCommand("dbo.GetPatientByID", conn))
+            using (SqlCommand cmd = new SqlCommand("dbo.NewGetPatientByID", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID", UserId);

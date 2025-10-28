@@ -102,6 +102,8 @@ namespace TestExercise
                             ForGender.SelectedIndex = 1;
                         ForNumber.Text = reader["Phone"].ToString().Replace("-","");
                         ForAddress.Text = reader["Address"].ToString();
+                        ForPersonID.Text = reader["PersonalID"].ToString();
+                        ForEmail.Text = reader["Email"].ToString();
                     }
                 }
             }
